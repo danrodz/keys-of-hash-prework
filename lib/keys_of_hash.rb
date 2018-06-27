@@ -3,7 +3,9 @@ class Hash
     # code goes here
     array = []
     arguments.each do |k, v|
-      if 
+      if v == arguments
+        array.push(k)
+      end
     end
     array
   end
