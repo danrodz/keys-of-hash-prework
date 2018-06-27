@@ -2,8 +2,10 @@ class Hash
   def keys_of(*arguments)
     # code goes here
     array = map do |k, v| 
-      arguments.include?(value) ? key : nil 
+      if arguments.include?(value)  
+        key
+      end
     end
-    return array.compact
+    return array
   end
 end
